@@ -4,9 +4,7 @@ import fibonacci from "./fib";
 import { Request, Response } from "express";
 
 interface FibRequest {
-  params: {
-    num: string;
-  };
+  num: string;
 }
 
 export default (req: Request<FibRequest>, res: Response) => {
